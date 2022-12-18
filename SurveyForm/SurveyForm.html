@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description">Please fill out the following form to provide us with your feedback:</p>
+<form id="survey-form">
+    <label for="name" id="name-label" required>Name:</label><br>
+    <input type="text" id="name" placeholder="Enter your name"><br>
+    <label for="email" id="email-label">Email:</label><br>
+    <input type="email" id="email" placeholder="Enter your email" required><br>
+    <label for="number" id="number-label">Number:</label><br>
+    <input type="number" id="number" min="0" max="100" placeholder="Enter a number between 0 and 100"><br>
+    <label for="dropdown" id="dropdown-label">Dropdown:</label><br>
+    <select id="dropdown">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+    </select><br>
+    <label>Radio:</label><br>
+    <input type="radio" name="radio" value="Option 1">Option 1<br>
+    <input type="radio" name="radio" value="Option 2">Option 2<br>
+    <label>Checkboxes:</label><br>
+    <input type="checkbox" value="Option 1">Option 1<br>
+    <input type="checkbox" value="Option 2">Option 2<br>
+    <label for="comments" id="comments-label">Comments:</label><br>
+    <textarea id="comments"></textarea><br>
+    <button type="submit" id="submit">Submit</button>
+</form>
+</body>
+</html>
